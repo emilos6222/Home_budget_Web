@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+
+<html lang="pl">
+
+	<head> 
+		<meta charset="utf-8" />
+		<title>Home Budget</title>
+		<meta name = "description" content = "App for counting your incomes and expenses and showing your money balance" />
+		<meta name = "keywords" content = "money, income, expense, balance, money in order, control over money" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+
+		<link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<header>
+			<h1>HOME BUDGET APP</h1>
+		</header>
+
+		<nav>
+			<div class="menubar">
+				<ul>
+					<li><a href="main_menu.html">MAIN MENU</a></li>
+					<li><a href="#">ADD INCOME</a></li>
+					<li><a href="add_expense.html">ADD EXPENSE</a></li>
+					<li><a href="check_balance.html">CHECK BALANCE</a></li>
+					<li><a href="#">SETTINGS</a></li>
+					<li><a href="index.html">LOG OUT</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<main>
+			<article>
+				<div class="container">
+					<div class="pagetitle">
+						<h2>Add expense</h2>
+					</div>
+					<div class="formbox">
+						<form>
+							<div class="oneform">
+								<label>Amount of expense: <input type="number" step="0.01" form="amount" value="0.0" > zł</label>
+							</div>
+							<div class="oneform">
+								<label>Date of expense: <input type="date" step="0.01" form="amount" value="2022-11-25"></label>
+							</div>
+							<div class="oneform">
+								<label id="payment">The way of payment:</label>
+								<select id="payment">
+									<option value="#">Cash</option>
+									<option value="#">Debit Card</option>
+									<option value="#">Credit Card</option>
+									<option value="#">By bank account</option>
+								</select>
+							</div>
+							<div class="oneform">
+								<fieldset>
+									<legend>Cathegory of expense</legend>
+
+									<div class="columns">
+										<div><label><input type="radio" value="1" name="cathegory">Food</label></div>
+										<div><label><input type="radio" value="2" name="cathegory">House</label></div>
+										<div><label><input type="radio" value="3" name="cathegory">Transport</label></div>
+										<div><label><input type="radio" value="4" name="cathegory">Telecommunication</label></div>
+										<div><label><input type="radio" value="5" name="cathegory">Heal care</label></div>
+									</div>
+									<div class="columns">
+										<div><label><input type="radio" value="6" name="cathegory">Clothes</label></div>
+										<div><label><input type="radio" value="7" name="cathegory">Hygiene</label></div>
+										<div><label><input type="radio" value="8" name="cathegory">Childrens</label></div>
+										<div><label><input type="radio" value="9" name="cathegory">Enjoy</label></div>
+										<div><label><input type="radio" value="10" name="cathegory">Travels</label></div>
+									</div>
+									<div class="columns">
+										<div><label><input type="radio" value="11" name="cathegory">Trainings</label></div>
+										<div><label><input type="radio" value="12" name="cathegory">Books</label></div>
+										<div><label><input type="radio" value="13" name="cathegory">Savings</label></div>
+										<div><label><input type="radio" value="14" name="cathegory">For retirement</label></div>
+										<div><label><input type="radio" value="15" name="cathegory">Debt repayment</label></div>
+									</div>
+									<div class="columns">
+										<div><label><input type="radio" value="16" name="cathegory">Donation</label></div>
+										<div><label><input type="radio" value="17" name="cathegory">Other</label></div>
+									</div>
+
+
+								</fieldset>
+							</div>
+
+							<div class="oneform">
+								<label>Comment about expense: <textarea rows="3" cols="20" placeholder="Your comment about expense"></textarea></label>
+							</div>
+							<div class="oneform">
+								<input type="submit" value="Send">
+								<input type="reset" value="Reset">
+							</div>
+						</form>
+					</div>
+				</div>
+			</article>
+		</main>
+
+		<footer>
+			Wszelkie prawa zastrzeżone. &copy; Adres e-mail: emil.cholewa.programista@gmail.com
+		</footer>
+		
+
+	</body>
+
+
+</html>
